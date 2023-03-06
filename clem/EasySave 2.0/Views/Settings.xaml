@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="EasySave_2._0.Views.Settings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EasySave_2._0.Views" 
+             xmlns:viewmodels="clr-namespace:EasySave_2._0.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:SettingsViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid Background="#322B33">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="261"/>
+            <ColumnDefinition Width="226"/>
+            <ColumnDefinition Width="113"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <DockPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <Label Content="{DynamicResource settings}" FontSize="32" Grid.Row="0" Foreground="AliceBlue" Margin="30,10"/>
+        </DockPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="1" Grid.RowSpan="3" Orientation="Vertical">
+
+            <Label  HorizontalAlignment="Left" Foreground="AliceBlue" FontSize="14" Grid.Row="1" Margin="10,10" Height="50" Content="{DynamicResource typeLog}"/>
+
+            <Label Content="{DynamicResource chooseLang}" HorizontalAlignment="Left" Foreground="AliceBlue" FontSize="14" Grid.Row="1" Margin="10,7" Width="200" Height="45" />
+            <Label  HorizontalAlignment="Left" Foreground="AliceBlue" FontSize="14" Grid.Row="1" Margin="10,8" Height="50" Content="{DynamicResource extensionType}"/>
+
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" Orientation="Vertical">
+
+            <ComboBox x:Name="textBoxLogFormat"
+                      ItemsSource="{Binding FormatOptions}"
+                      SelectedItem="{Binding logFormat, Mode=OneWayToSource}" HorizontalAlignment="Left" Margin="10,20" Width="200">
+            </ComboBox>
+            <ComboBox Name="cmb" SelectionChanged="cmb_changed" HorizontalAlignment="Left" Margin="10,20" Width="200">
+                <ComboBoxItem Content="{DynamicResource en}"/>
+                <ComboBoxItem Content="{DynamicResource fr}"/>
+            </ComboBox>
+            <StackPanel Margin="10,20">
+                <CheckBox Foreground="AliceBlue" IsThreeState="True" Name="AllFeatures" Checked="AllFeatures_CheckedChanged" Unchecked="AllFeatures_CheckedChanged" Content="{DynamicResource enableAll}"/>
+                <StackPanel Margin="20,5">
+                    <CheckBox Foreground="AliceBlue" Name="Featuretxt" IsChecked="False" Checked="Feature_CheckedChanged" Unchecked="Feature_CheckedChanged">.txt</CheckBox>
+                    <CheckBox Foreground="AliceBlue" Name="Featurepdf" IsChecked="True" Checked="Feature_CheckedChanged" Unchecked="Feature_CheckedChanged">.pdf</CheckBox>
+                    <!--<CheckBox Foreground="AliceBlue" Name="Featuredocx" IsChecked="False" Checked="Feature_CheckedChanged" Unchecked="Feature_CheckedChanged">.docx</CheckBox>-->
+                </StackPanel>
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Grid.Row="1" Orientation="Horizontal">
+            <Label Content="{DynamicResource currentTypeLog}" Foreground="AliceBlue" Margin="2,15"/>
+            <TextBlock x:Name="myTextBlock" Text="{Binding logFormat, Mode=OneWay}" Foreground="AliceBlue"  Margin="0,20.8"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "test",
+    "source": "C:\\Users\\sarah\\Desktop\\source",
+    "target": "C:\\Users\\sarah\\Desktop\\dest",
+    "size": "0",
+    "transfertTime": "0",
+    "cryptTime": null,
+    "time": "14/12/2022 10:45:48"
+  },
+  {
+    "name": "test",
+    "source": "C:\\Users\\sarah\\Desktop\\dest\\test1.txt",
+    "target": "C:\\Users\\sarah\\Desktop\\dest\\test1.txt",
+    "size": "0",
+    "transfertTime": "0,0450107",
+    "cryptTime": null,
+    "time": "14/12/2022 10:46:00"
+  },
+  {
+    "name": "test",
+    "source": "C:\\Users\\sarah\\Desktop\\dest\\test2.txt",
+    "target": "C:\\Users\\sarah\\Desktop\\dest\\test2.txt",
+    "size": "9077",
+    "transfertTime": "0,0001287",
+    "cryptTime": null,
+    "time": "14/12/2022 10:46:00"
+  },
+  {
+    "name": "test",
+    "source": "C:\\Users\\sarah\\Desktop\\source",
+    "target": "C:\\Users\\sarah\\Desktop\\dest",
+    "size": "0",
+    "transfertTime": "0",
+    "cryptTime": "0",
+    "time": "14/12/2022 13:55:10"
+  },
+  {
+    "name": "test",
+    "source": "C:\\Users\\sarah\\Desktop\\dest\\test1.txt",
+    "target": "C:\\Users\\sarah\\Desktop\\dest\\test1.txt",
+    "size": "0",
+    "transfertTime": "9,79E-05",
+    "cryptTime": "0,2916612",
+    "time": "14/12/2022 13:55:22"
+  },
+  {
+    "name": "test",
+    "source": "C:\\Users\\sarah\\Desktop\\dest\\test2.txt",
+    "target": "C:\\Users\\sarah\\Desktop\\dest\\test2.txt",
+    "size": "9077",
+    "transfertTime": "0,000112",
+    "cryptTime": "0,0224018",
+    "time": "14/12/2022 13:55:22"
+  }
+]

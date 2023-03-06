@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<jobs>
+  <job>
+    <name>test</name>
+    <source>C:\Users\sarah\Desktop\source</source>
+    <target>C:\Users\sarah\Desktop\dest</target>
+    <type>Full</type>
+  </job>
+</jobs>

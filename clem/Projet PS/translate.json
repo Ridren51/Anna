@@ -1,0 +1,18 @@
+{
+  "langage": {
+    "fr": {
+      "test": "bonjour",
+      "menu": "\n  __Gestionnaire de sauvegarde__\n\n\n commande :\n\n 1. Créer un travail de sauvegarde\n 2. Exécuter un travail de sauvegarde\n 3. Exécuter tous les travaux de sauvegardes\n 4. Changer la langue\n 4. Quitter\n",
+      "langChange": "\n  Paramètre langue :\n\n 1. Anglais\n 2. Français (actuelle)\n",
+      "savedParam": "paramètre sauvegardé !\n\n",
+      "readError": "n’est pas reconnu en tant que commande interne\n\n"
+    },
+    "en": {
+      "test": "hello",
+      "menu": "\n  __Backup Manager__\n\n\n command :\n\n 1. Create a job\n 2. Run a job\n 3. Run all job\n 4. Change language\n 5. Exit\n",
+      "langChange": "\n  Language setting :\n\n 1. English (current)\n 2. French\n",
+      "savedParam": "parameter saved !\n\n",
+      "readError": "is not recognized as an internal command\n\n"
+    }
+  }
+}
